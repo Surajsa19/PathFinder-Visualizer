@@ -1,63 +1,65 @@
 # PathFinder Visualizer
 
+<p align="center">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/152869815/467389214-2a995eec-ba40-4ef4-8bac-2c21dce7640e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250717%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250717T064810Z&X-Amz-Expires=300&X-Amz-Signature=6726b59cdac6e650a2ed33206271fd87978c64c72740ebfbba7d6aef6d315634&X-Amz-SignedHeaders=host" alt="Pathfinder Visualizer Logo" />
+</p>
+
 <h3 align="center">
-  A dynamic web application for visualizing classic pathfinding algorithms.
+  An interactive web application for visualizing classic pathfinding and maze generation algorithms.
 </h3>
 
 <p align="center">
-  <strong><a href="YOUR_LIVE_DEMO_URL">View Live Demo »</a></strong>
+  <strong><a href="https://pathfinder-visualizer-suraj.netlify.app/">View Live Demo »</a></strong>
 </p>
 
-<br>
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Badge">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS Badge">
+</p>
+
+---
+
+<!-- **IMPORTANT**: To create a GIF, use a free tool like ScreenToGif or Giphy Capture to record your screen while you use the app. Then, upload the GIF to your README's folder and change the link below. -->
+<p align="center">
+  <img src="https://i.imgur.com/your-demo-gif.gif" alt="Project Demo GIF">
+</p>
 
 ---
 
 ## About The Project
 
-This project was built to bring fundamental graph traversal algorithms to life. It provides an interactive and intuitive way to understand how different algorithms navigate a grid to find the shortest path from a start to a target node. Users can draw walls, generate complex mazes, and compare the performance of various algorithms in real-time.
+This project was born from a passion for understanding the core principles of computer science. While it's one thing to learn about algorithms in theory, it's another to see them in action. This visualizer was built to bridge that gap, providing an interactive sandbox to explore how different algorithms solve the complex problem of finding the shortest path.
 
-This project demonstrates a solid understanding of core computer science concepts, data structures, and front-end development with a modern tech stack.
-
----
+It's a demonstration of not just front-end development skills, but also a deep appreciation for the data structures and logic that power modern software.
 
 ## Key Features
 
-* **Interactive Grid:** Click and drag to draw walls, creating custom obstacles for the algorithms to navigate.
-* **Draggable Nodes:** Easily move the start (green) and target (red) nodes to any position on the grid.
-* **Multiple Algorithm Visualizations:** Select and visualize a variety of classic pathfinding algorithms.
-* **Advanced Maze Generation:**
-    * **Recursive Division:** Generates complex, structured mazes with long corridors and distinct rooms.
-    * **Random Walls:** Creates a scattered, random field of obstacles.
-* **Performance Analysis:** After each visualization, key metrics are displayed to allow for direct comparison of algorithm efficiency:
-    * Path Length
-    * Number of Nodes Visited
-    * Execution Time (in milliseconds)
-* **Clean & Responsive UI:** Built with a modern design that works seamlessly on all screen sizes.
-
----
+* **Interactive Grid:** Dynamically create complex mazes by clicking and dragging to draw walls.
+* **Algorithm Comparison:** Visualize and directly compare the performance of four fundamental pathfinding algorithms.
+* **Advanced Maze Generation:** Go beyond simple walls with a built-in Recursive Division algorithm that creates intricate, solvable mazes.
+* **Real-time Performance Metrics:** Instantly see the efficiency of each algorithm with statistics on Path Length, Nodes Visited, and Execution Time.
+* **Draggable Start/Target Nodes:** Easily change the parameters of the problem by moving the start and target nodes.
 
 ## Algorithms Implemented
 
-This visualizer showcases four fundamental pathfinding algorithms, each with its unique approach to solving the maze.
+This visualizer showcases four fundamental pathfinding algorithms, each with its unique approach and trade-offs.
 
-| Algorithm      | Guarantees Shortest Path | Description                                                                                             |
+| Algorithm      | Guarantees Shortest Path | Key Characteristic                                                                                      |
 | :------------- | :----------------------- | :------------------------------------------------------------------------------------------------------ |
-| **Dijkstra's** | **Yes** | The classic weighted algorithm; explores outwards from the start, guaranteeing the shortest path.         |
-| **A\* Search** | **Yes** | An optimized version of Dijkstra's that uses a heuristic to intelligently guide its search toward the target. |
-| **BFS** | **Yes (Unweighted)** | Explores all neighbors at the present depth prior to moving on to the nodes at the next depth level.    |
-| **DFS** | **No** | Explores as far as possible along each branch before backtracking, finding a path but not necessarily the shortest one. |
+| **Dijkstra's** | **Yes** | The foundational algorithm; explores layer by layer, guaranteeing the shortest path in a weighted graph.  |
+| **A\* Search** | **Yes** | A "smarter" version of Dijkstra's; uses a heuristic to make an educated guess and guide its search efficiently. |
+| **BFS** | **Yes (Unweighted)** | Explores all neighbors at the current depth before moving on. Excellent for finding the shortest path in terms of number of steps. |
+| **DFS** | **No** | Dives deep down one path as far as it can go before backtracking. Finds a path quickly, but not necessarily the best one. |
 
----
+## Challenges & Learnings
 
-## Tech Stack
+Building this project was a valuable learning experience. One of the main challenges was ensuring the animations ran smoothly without blocking the main UI thread, which was solved by carefully managing state updates and using `setTimeout` to create a non-blocking animation loop. Another challenge was correctly implementing the `Recursive Division` maze algorithm, which required a deep understanding of recursion and handling edge cases to create perfect mazes.
 
-This project was built using a modern and professional technology stack.
-
-* **[React.js](https://reactjs.org/):** A powerful JavaScript library for building user interfaces.
-* **[TypeScript](https://www.typescriptlang.org/):** For adding static types to JavaScript, improving code quality and maintainability.
-* **[Tailwind CSS](https://tailwindcss.com/):** A utility-first CSS framework for rapid UI development.
-
----
+This project solidified my understanding of:
+* **Complex State Management** in React with Hooks.
+* The practical **trade-offs between different algorithms** and their time/space complexity.
+* The importance of a **well-structured and modular codebase** for maintainability and scalability.
 
 ## Getting Started
 
@@ -65,11 +67,11 @@ To get a local copy up and running, follow these simple steps.
 
 ### Prerequisites
 
-* **Node.js** and **npm** installed on your machine. You can download them [here](https://nodejs.org/).
+* Node.js and npm installed.
 
 ### Installation
 
-1.  Clone the repository to your local machine:
+1.  Clone the repository:
     ```sh
     git clone YOUR_GITHUB_REPO_LINK
     ```
@@ -85,7 +87,6 @@ To get a local copy up and running, follow these simple steps.
     ```sh
     npm start
     ```
-    The application will open at `http://localhost:3000`.
 
 ---
 
@@ -95,5 +96,3 @@ To get a local copy up and running, follow these simple steps.
 
 * **LinkedIn:** [https://www.linkedin.com/in/suraj-sa-69a4b6289](https://www.linkedin.com/in/suraj-sa-69a4b6289)
 * **Email:** [surajsa0903@gmail.com](mailto:surajsa0903@gmail.com)
-
-Project Link: [YOUR_GITHUB_REPO_LINK](YOUR_GITHUB_REPO_LINK)
