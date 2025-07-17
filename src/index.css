@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* This ensures each node in the grid is a square and fills its container.
+  The aspect-ratio property is a modern way to maintain a square shape.
+*/
+.node {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgb(226, 232, 240);
+  background-color: white;
+  transition: all 0.2s ease-out;
+}
