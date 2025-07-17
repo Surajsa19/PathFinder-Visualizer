@@ -1,46 +1,99 @@
-# Getting Started with Create React App
+# PathFinder Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+  A dynamic web application for visualizing classic pathfinding algorithms.
+</h3>
 
-## Available Scripts
+<p align="center">
+  <strong><a href="YOUR_LIVE_DEMO_URL">View Live Demo »</a></strong>
+</p>
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About The Project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This project was built to bring fundamental graph traversal algorithms to life. It provides an interactive and intuitive way to understand how different algorithms navigate a grid to find the shortest path from a start to a target node. Users can draw walls, generate complex mazes, and compare the performance of various algorithms in real-time.
 
-### `npm test`
+This project demonstrates a solid understanding of core computer science concepts, data structures, and front-end development with a modern tech stack.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Key Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Interactive Grid:** Click and drag to draw walls, creating custom obstacles for the algorithms to navigate.
+* **Draggable Nodes:** Easily move the start (green) and target (red) nodes to any position on the grid.
+* **Multiple Algorithm Visualizations:** Select and visualize a variety of classic pathfinding algorithms.
+* **Advanced Maze Generation:**
+    * **Recursive Division:** Generates complex, structured mazes with long corridors and distinct rooms.
+    * **Random Walls:** Creates a scattered, random field of obstacles.
+* **Performance Analysis:** After each visualization, key metrics are displayed to allow for direct comparison of algorithm efficiency:
+    * Path Length
+    * Number of Nodes Visited
+    * Execution Time (in milliseconds)
+* **Clean & Responsive UI:** Built with a modern design that works seamlessly on all screen sizes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Algorithms Implemented
 
-### `npm run eject`
+This visualizer showcases four fundamental pathfinding algorithms, each with its unique approach to solving the maze.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Algorithm      | Guarantees Shortest Path | Description                                                                                             |
+| :------------- | :----------------------- | :------------------------------------------------------------------------------------------------------ |
+| **Dijkstra's** | **Yes** | The classic weighted algorithm; explores outwards from the start, guaranteeing the shortest path.         |
+| **A\* Search** | **Yes** | An optimized version of Dijkstra's that uses a heuristic to intelligently guide its search toward the target. |
+| **BFS** | **Yes (Unweighted)** | Explores all neighbors at the present depth prior to moving on to the nodes at the next depth level.    |
+| **DFS** | **No** | Explores as far as possible along each branch before backtracking, finding a path but not necessarily the shortest one. |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Tech Stack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project was built using a modern and professional technology stack.
 
-## Learn More
+* **[React.js](https://reactjs.org/):** A powerful JavaScript library for building user interfaces.
+* **[TypeScript](https://www.typescriptlang.org/):** For adding static types to JavaScript, improving code quality and maintainability.
+* **[Tailwind CSS](https://tailwindcss.com/):** A utility-first CSS framework for rapid UI development.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+* **Node.js** and **npm** installed on your machine. You can download them [here](https://nodejs.org/).
+
+### Installation
+
+1.  Clone the repository to your local machine:
+    ```sh
+    git clone YOUR_GITHUB_REPO_LINK
+    ```
+2.  Navigate into the project directory:
+    ```sh
+    cd pathfinder-visualizer
+    ```
+3.  Install NPM packages:
+    ```sh
+    npm install
+    ```
+4.  Start the development server:
+    ```sh
+    npm start
+    ```
+    The application will open at `http://localhost:3000`.
+
+---
+
+## Contact
+
+**Suraj Sa**
+
+* **LinkedIn:** [https://www.linkedin.com/in/suraj-sa-69a4b6289](https://www.linkedin.com/in/suraj-sa-69a4b6289)
+* **Email:** [surajsa0903@gmail.com](mailto:surajsa0903@gmail.com)
+
+Project Link: [YOUR_GITHUB_REPO_LINK](YOUR_GITHUB_REPO_LINK)
