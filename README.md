@@ -1,7 +1,9 @@
 # PathFinder Visualizer
 
 <p align="center">
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/152869815/467389214-2a995eec-ba40-4ef4-8bac-2c21dce7640e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250717%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250717T064810Z&X-Amz-Expires=300&X-Amz-Signature=6726b59cdac6e650a2ed33206271fd87978c64c72740ebfbba7d6aef6d315634&X-Amz-SignedHeaders=host" alt="Pathfinder Visualizer Logo" />
+ <img width="1919" height="980" alt="image" src="https://github.com/user-attachments/assets/6664994f-a542-40db-895b-ca280422ff89" />
+
+
 </p>
 
 <h3 align="center">
