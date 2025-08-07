@@ -1,8 +1,7 @@
 # PathFinder Visualizer
 
 <p align="center">
- <img width="1919" height="980" alt="image" src="https://github.com/user-attachments/assets/6664994f-a542-40db-895b-ca280422ff89" />
-
+ <img width="1889" height="964" alt="image" src="https://github.com/user-attachments/assets/ea268891-616b-4f87-911c-082d6675858a" />
 
 </p>
 
